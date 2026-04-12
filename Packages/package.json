@@ -1,0 +1,19 @@
+{
+  "name": "coachcsca-exam-platform",
+  "version": "1.0.0",
+  "description": "A comprehensive practice and mock test platform for the China Scholastic Competency Assessment (CSCA), featuring timed exams, statistics, and subject-specific practice.",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "mongodb": "^7.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^7.3.1"
+  }
+}
