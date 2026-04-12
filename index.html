@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoachCSCA - CSCA Exam Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                         DEFAULT: '#505081',   // Light mode (your dark blue)
+                         dark: '#3A3A66',
+                         light: '#7A7AB8'
+                                   },
+                        secondary: '#b3e5fc',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    :root {
+        --chinese-red: #EE1C25;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        transition: background-color 0.3s ease;
+    }
+
+    .font-chinese {
+        font-family: 'Noto Serif SC', serif;
+    }
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .dark .glass-card {
+        background: rgba(31, 41, 55, 0.8);
+        border: 1px solid rgba(75, 85, 99, 0.3);
+    }
+
+    .chinese-pattern {
+        background-image: url("https://www.transparenttextures.com/patterns/oriental-tiles.png");
+    }
+
+    .hero-gradient {
+        background: linear-gradient(135deg, #EE1C25 0%, #8B0000 100%);
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fadeInUp {
+        animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
