@@ -19,7 +19,10 @@ export default function App() {
     const [route, setRoute] = useState(window.location.hash || '#/');
 
     useEffect(() => {
-        const handleHashChange = () => setRoute(window.location.hash || '#/');
+        const handleHashChange = () => {
+    setRoute(window.location.hash || '#/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
         window.addEventListener('hashchange', handleHashChange);
         return () => window.removeEventListener('hashchange', handleHashChange);
     }, []);
