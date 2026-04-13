@@ -10,7 +10,6 @@ export default function CSCA() {
 
     return html`
         <div class="container mx-auto px-4 py-16 max-w-5xl">
-        <meta name="monetag" content="a1f42fbed44ee83bfad84d5af05d9f64">
             <div class="text-center mb-16">
                 <h1 class="text-5xl font-bold mb-6 font-chinese text-primary">About CSCA</h1>
                 <p class="text-xl text-slate-500 max-w-2xl mx-auto">The China Scholastic Competency Assessment is your bridge to academic excellence in the Middle Kingdom.</p>
