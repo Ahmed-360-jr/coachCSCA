@@ -116,6 +116,7 @@ export default function PracticeQuiz({ subject, topic }) {
 
     return html`
         <div class="container mx-auto px-4 py-12 max-w-3xl">
+        <meta name="monetag" content="a1f42fbed44ee83bfad84d5af05d9f64">
             <div class="flex items-center justify-between mb-12">
                 <div class="flex items-center">
                     <button onClick=${() => window.history.back()} class="mr-4 p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">

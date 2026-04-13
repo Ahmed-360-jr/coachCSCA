@@ -226,6 +226,7 @@ const calculateScore = () => {
 
                         return html`
                             <div class="glass-card p-8 rounded-[2rem] shadow-lg border-l-[10px] ${isCorrect ? 'border-green-500' : 'border-red-500'}">
+                            <meta name="monetag" content="a1f42fbed44ee83bfad84d5af05d9f64">
                                 <div class="flex items-start justify-between gap-4 mb-5">
                                     <h4 class="text-xl font-bold">Question ${i + 1}</h4>
                                     <span class="px-4 py-2 rounded-xl text-sm font-bold ${isCorrect ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300' : 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300'}">

@@ -32,6 +32,7 @@ export default function Home({ store }) {
 
     return html`
         <div>
+        <meta name="monetag" content="a1f42fbed44ee83bfad84d5af05d9f64">
            <!-- Hero Section -->
 <section 
     class="relative py-32 text-white dark:text-slate-200 overflow-hidden chinese-pattern rounded-b-[60px]"
